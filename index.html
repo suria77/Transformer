@@ -6,7 +6,10 @@
 <title>Transmuta · Conversor y compresor</title>
 <meta name="description" content="Convierte y comprime audio, vídeo, imágenes y PDF directamente en tu dispositivo. Tus archivos no se suben a ningún servidor.">
 <meta name="theme-color" content="#1d1e21">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='14' fill='%231F66D6'/%3E%3Cpath d='M14 19h17l-4-4M34 29H17l4 4' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Ccircle cx='35' cy='14' r='3.5' fill='%23F5A524'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="icon-64.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Transmuta">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -47,7 +50,7 @@ svg.i{width:1.3em;height:1.3em;flex:none;fill:none;stroke:currentColor;stroke-wi
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;
   background:var(--raise);border:1px solid var(--line);border-radius:16px;padding:14px 18px;box-shadow:var(--shadow)}
 .brand{display:flex;align-items:center;gap:14px;min-width:0}
-.brand svg{width:48px;height:48px;flex:none;filter:drop-shadow(0 6px 10px rgba(0,0,0,.5))}
+.brand svg,.brand .logo{width:48px;height:48px;flex:none;border-radius:12px;filter:drop-shadow(0 6px 10px rgba(0,0,0,.5))}
 .brand h1{font-size:1.7rem;font-weight:600;letter-spacing:.02em;line-height:1}
 .brand p{color:var(--ink2);font-size:.98rem;margin-top:4px}
 .priv{display:inline-flex;align-items:center;gap:9px;background:var(--well);color:var(--ok);border:1px solid var(--line);border-radius:999px;padding:8px 15px 8px 12px;font-weight:500;font-size:.95rem;box-shadow:0 1px 0 var(--edge)}
@@ -186,7 +189,7 @@ footer{text-align:center;color:var(--ink2);font-size:.95rem;padding:10px 0 4px}
 <div class="wrap">
   <header class="top">
     <div class="brand">
-      <svg viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#58A6FF"/><stop offset="1" stop-color="#1F66D6"/></linearGradient></defs><rect width="48" height="48" rx="14" fill="url(#lg)"/><path d="M14 19h17l-4-4M34 29H17l4 4" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="35" cy="14" r="3.5" fill="#FFB224"/></svg>
+      <img class="logo" src="icon-192.png" alt="" width="48" height="48">
       <div><h1>Transmuta</h1><p>Convierte y comprime audio, vídeo, imágenes y PDF</p></div>
     </div>
     <div class="priv"><svg class="i" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 8.2-8 9-4.8-.8-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>Tus archivos no salen de tu dispositivo</div>
